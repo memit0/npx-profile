@@ -29,7 +29,7 @@ let resumeFile = path.resolve(__dirname, `${resumePhotoPath}`)
 
 
 
-const resume = await got("https://github.com/s-alad/sa1ad/blob/main/assets/resume.png?raw=true").buffer();
+const resume = await got("https://github.com/memit0/npx-profile/blob/main/assets/resume.png?raw=true").buffer();
 
 
 
