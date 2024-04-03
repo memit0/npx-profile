@@ -1,12 +1,12 @@
 {
   "name": "memit0",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "my biz card",
   "main": "index.js",
   "type": "module",
   "bin": "./index.js",
   "files": [
-    "resume.png"
+    "ronaldinho.jpg"
   ],
   "scripts": {
     "setup": "npm install",
