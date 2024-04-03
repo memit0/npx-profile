@@ -22,7 +22,7 @@ const resume = await got("https://github.com/memit0/npx-profile/blob/main/assets
 // =========================================================================================================================
 
 const data = {
-    name: chalk.bold.purple('Mehmet Battal'),
+    name: chalk.bold.green('Mehmet Battal'),
     github: chalk.bold.white('https://github.com/memit0'),
     instagram: chalk.white('https://www.instagram.com/zabattl/'),
     email: chalk.white('mebattll@gmail.com'),
