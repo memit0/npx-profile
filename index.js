@@ -17,7 +17,7 @@ clear()
 
 // =========================================================================================================================
 
-const resume = await got("https://github.com/memit0/npx-profile/blob/main/assets/ronaldinho.jpg?raw=true").buffer();
+const ronaldinho = await got("https://github.com/memit0/npx-profile/blob/main/assets/ronaldinho.jpg?raw=true").buffer();
 
 // =========================================================================================================================
 
