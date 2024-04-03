@@ -6,12 +6,10 @@ import boxen from 'boxen'
 import clear from 'clear'
 import inquirer from 'inquirer'
 import Enquirer from 'enquirer'
-import open from 'open'
+//import open from 'open' - issue with it 
 import terminalImage from 'terminal-image';
 import got from 'got';
-import { fileURLToPath } from 'url';
-import { dirname } from 'path';
-import * as path from 'path';
+
 
 // clear the terminal before showing the npx card ==========================================================================
 
@@ -19,25 +17,12 @@ clear()
 
 // =========================================================================================================================
 
-// =========================================================================================================================
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-let resumePhotoPath = "./assets/resume.png"
-let resumeFile = path.resolve(__dirname, `${resumePhotoPath}`)
-
-
-
-const resume = await got("https://github.com/memit0/npx-profile/blob/main/assets/resume.png?raw=true").buffer();
-
-
-
+const resume = await got("https://github.com/memit0/npx-profile/blob/main/assets/ronaldinho.jpg?raw=true").buffer();
 
 // =========================================================================================================================
 
 const data = {
-    name: chalk.bold.green('Mehmet Battal'),
+    name: chalk.bold.purple('Mehmet Battal'),
     github: chalk.bold.white('https://github.com/memit0'),
     instagram: chalk.white('https://www.instagram.com/zabattl/'),
     email: chalk.white('mebattll@gmail.com'),
@@ -79,16 +64,17 @@ const options = {
         {
             name: `| inspo`,
             value: async () => {
-                open("https://www.youtube.com/watch?v=mLutvM8TMEM");
+                //await open('https://www.youtube.com/watch?v=mLutvM8TMEM');
+                console.log("under construction ")
                 console.log("Focused up!");
             }
         },
         {
-            name: `| resume`,
+            name: `| image`,
             value: async () => {
                 try {
                     /* console.log(await terminalImage.file(resume,{width: 40})); */
-                    console.log(await terminalImage.buffer(resume, {width: 40}));
+                    console.log(await terminalImage.buffer(ronaldinho));
                 } catch (err) {
                     console.log(err)
                 }
